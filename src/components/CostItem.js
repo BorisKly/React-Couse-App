@@ -1,17 +1,16 @@
+import CostDate from './CostDate';
 import './CostItem.css'
 
 function CostItem(props) { 
 
-    const month = props.date.toLocaleString("en-EN", { month: "long" });
-    const year = props.date.getFullYear();
-    const day = props.date.toLocaleString("en-En", {day: "2-digit"})
+    // const month = props.date.toLocaleString("en-EN", { month: "long" });
+    // const year = props.date.getFullYear();
+    // const day = props.date.toLocaleString("en-En", {day: "2-digit"})
     
     return (
         <div className="cost-item">
             <div>
-                <div> {month} </div>
-                <div> {year} </div>
-                <div> {day} </div>
+                <CostDate date={ props.date}></CostDate>
             </div>
             <div className='cost-item__description'>
                 <h2> { props.description} </h2> 

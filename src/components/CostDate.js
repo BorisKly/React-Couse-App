@@ -1,3 +1,4 @@
+import './CostDate.css'
 
 function CostDate(props) { 
  
@@ -7,10 +8,10 @@ function CostDate(props) {
    
     return (
         <div className="cost-date">
-            <div>{month}</div>
-             <div>{year}</div>
-            <div>{day}</div>
-        </div>
+            <div className='cost-date__month' >{month}</div>
+             <div className='cost-date__year'>{year}</div>
+            <div className='cost-date__day'>{day}</div>
+        </div> 
     )
 }
 
